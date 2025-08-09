@@ -1,3 +1,3 @@
 ```
-rm -rf include/xuci && git clone https://github.com/HARMONYREN-RD-DEPARTMENT/xuci.git && cp -r xuci/include/xuci include/xuci && rm -rf xuci
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/HARMONY-REN-RDD/xuci/refs/heads/master/build.sh)"
 ```
