@@ -67,6 +67,17 @@ public:
       }
     }
   }
+
+  void add(int64_t n) {
+    int64_t val = static_cast<int64_t>(to_unsigned());
+    val += n;
+    uint64_t uval = static_cast<uint64_t>(val);
+
+    for (int i = 0; i < n_bytes; ++i) {
+      this->write(i, uval & 0xFF);
+      uval >>= 8;
+    }
+  }
 };
 
 } // namespace xuci
