@@ -9,6 +9,7 @@ public:
   void decode() { std::cout << "decode" << std::endl; }
   void execute() {
     std::cout << "execute" << std::endl;
+    std::cout << this->_args.size() << std::endl;
     stop_execution();
   }
 };
