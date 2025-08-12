@@ -12,15 +12,15 @@ private:
 public:
   Memory() = default;
 
-  std::uint8_t read(AddressType address) {
+  std::uint8_t read(AddressType address) const {
     return this->data.try_emplace(address, 0).first->second;
   }
 
-  void write(AddressType address, std::uint8_t value) { this->data[address] = value; }
+  void write(AddressType address, std::uint8_t value) {
+    this->data[address] = value;
+  }
 
   void clear() { this->data.clear(); }
-
-  
 };
 
 } // namespace xuci

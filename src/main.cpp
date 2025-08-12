@@ -1,12 +1,19 @@
+#include "xuci/log.hpp"
+#include "xuci/orchestrator.hpp"
 #include <iostream>
 
 #include <xuci/core.hpp>
 
-int main() {
+using namespace xuci;
 
-  xuci::Register<2> x;
+int main(int argc, char **argv) {
+  log_fatal(argc < 2, "Provide a flag");
 
-  std::cout << x.to_hex() << std::endl;
+  Args args(argv + 1, argv + argc);
+  
+  Orchestrator orchestrator(args);
+
+  orchestrator.process_args();
 
   return 0;
 }
