@@ -1,11 +1,6 @@
 #!/bin/sh
 set -e
 
-if [ -z "$1" ]; then
-    echo "Provide project name"
-    exit 1
-fi
-
 rm -rf include/xuci
 git clone https://github.com/HARMONY-REN-RDD/xuci.git
 cd xuci

@@ -26,7 +26,7 @@ public:
 
   void process_args();
 
-  BaseArchitecture *load_architecture(const std::string &path);
+  BaseArchitecture *load_architecture(std::string path);
 };
 
 } // namespace xuci
