@@ -14,7 +14,7 @@
 namespace xuci {
 
 class BaseArchitecture {
-private:
+protected:
   bool _is_running;
   std::vector<std::string> _args;
 

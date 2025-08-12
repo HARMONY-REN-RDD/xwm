@@ -1,6 +1,6 @@
 #include <xuci/orchestrator.hpp>
 
-xuci::Orchestrator::Orchestrator(Args &args) : args(&args) {}
+xuci::Orchestrator::Orchestrator(Args &args) : args(args) {}
 
 xuci::Orchestrator::~Orchestrator() {
   if (this->architecture) {
