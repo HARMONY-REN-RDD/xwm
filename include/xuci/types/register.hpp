@@ -14,7 +14,7 @@ public:
 
   Register() = default;
 
-  std::string to_hex(bool little = true) const {
+  std::string to_hex(bool little = true) {
     std::ostringstream oss;
     if (little) {
       for (int i = 0; i < n_bytes; ++i) {
