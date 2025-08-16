@@ -15,7 +15,7 @@ class Orchestrator {
 private:
   BaseArchitecture *architecture = nullptr;
 
-  Args *args = nullptr;
+  Args args;
 
   // Architecture shared lib loading
   void *handle = nullptr;

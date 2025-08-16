@@ -11,7 +11,6 @@ xuci::Orchestrator::~Orchestrator() {
 #ifdef __linux__
     dlclose(handle);
 #elif defined(_WIN32)
-
     FreeLibrary((HMODULE)handle);
 #else
     log_fatal(true,
