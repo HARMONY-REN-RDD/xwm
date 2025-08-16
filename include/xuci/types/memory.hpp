@@ -12,7 +12,7 @@ private:
 public:
   Memory() = default;
 
-  std::uint8_t read(AddressType address) const {
+  std::uint8_t read(AddressType address) {
     return this->data.try_emplace(address, 0).first->second;
   }
 
