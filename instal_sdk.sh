@@ -9,7 +9,7 @@ cd xuci
 cd ..
 cp -r ./xuci/include ./
 mkdir -p objs
-cp xuci/src/types/base_architecture.cpp ./src
+cp xuci/src/base_architecture.cpp ./src
 cp xuci/build/*/base_architecture.* ./objs
 rm -rf xuci
 
