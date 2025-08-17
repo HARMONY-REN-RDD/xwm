@@ -26,6 +26,7 @@ public:
   virtual void fetch() = 0;
   virtual void decode() = 0;
   virtual void execute() = 0;
+  virtual void run() = 0;
 
   bool is_running() const;
   void stop_execution();

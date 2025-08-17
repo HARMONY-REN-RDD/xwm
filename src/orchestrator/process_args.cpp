@@ -12,16 +12,21 @@ void Orchestrator::process_args() {
     log_fatal(this->args.size() < 2, "Provide the file of the architecture");
 
     this->architecture = this->load_architecture(this->args.at(1));
-    
+
     this->architecture->set_args(
         std::vector<std::string>(this->args.begin() + 2, this->args.end()));
+    
+    this->architecture->run();
+    
+    return;
+  }
 
-    do {
-      this->architecture->fetch();
-      this->architecture->decode();
-      this->architecture->execute();
-    } while (this->architecture->is_running());
+  if (cmd == "-c") {
+    log_fatal(this->args.size() < 2, "Provide the language name to compile");
 
+    std::string language = this->args.at(1);
+
+        
     return;
   }
 
