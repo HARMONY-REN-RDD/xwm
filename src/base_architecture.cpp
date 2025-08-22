@@ -1,6 +1,6 @@
-#include <xuci/base_architecture.hpp>
+#include <xwm/base_architecture.hpp>
 
-namespace xuci {
+namespace xwm {
 
 BaseArchitecture::BaseArchitecture() { this->_is_running = true; }
 
@@ -9,4 +9,4 @@ void BaseArchitecture::stop_execution() { this->_is_running = false; }
 
 
 
-} // namespace xuci
+} // namespace xwm

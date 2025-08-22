@@ -3,7 +3,7 @@
 #include <cstdint>
 #include <unordered_map>
 
-namespace xuci {
+namespace xwm {
 
 template <typename AddressType> class Memory {
 private:
@@ -23,4 +23,4 @@ public:
   void clear() { this->data.clear(); }
 };
 
-} // namespace xuci
+} // namespace xwm

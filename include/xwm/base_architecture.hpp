@@ -3,15 +3,15 @@
 #include <string>
 #ifdef _WIN32
 #include <windows.h>
-#define XUCI_EXPORT extern "C" __declspec(dllexport)
+#define xwm_EXPORT extern "C" __declspec(dllexport)
 #else
 #include <dlfcn.h>
-#define XUCI_EXPORT extern "C"
+#define xwm_EXPORT extern "C"
 #endif
 
 #include <vector>
 
-namespace xuci {
+namespace xwm {
 
 class BaseArchitecture {
 protected:
@@ -32,4 +32,4 @@ public:
   void stop_execution();
 };
 
-} // namespace xuci
+} // namespace xwm

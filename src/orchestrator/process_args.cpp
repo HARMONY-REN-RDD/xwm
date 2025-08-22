@@ -1,7 +1,7 @@
-#include <xuci/log.hpp>
-#include <xuci/orchestrator.hpp>
+#include <xwm/log.hpp>
+#include <xwm/orchestrator.hpp>
 
-namespace xuci {
+namespace xwm {
 
 void Orchestrator::process_args() {
   log_fatal(this->args.empty(), "No command provided");
@@ -33,4 +33,4 @@ void Orchestrator::process_args() {
   log_fatal(true, "Unknown command");
 }
 
-} // namespace xuci
+} // namespace xwm

@@ -3,11 +3,11 @@
 #include <string>
 #include <vector>
 
-#include <xuci/base_architecture.hpp>
+#include <xwm/base_architecture.hpp>
 
 
 
-namespace xuci {
+namespace xwm {
 
 using Args = std::vector<std::string>;
 
@@ -29,4 +29,4 @@ public:
   BaseArchitecture *load_architecture(std::string path);
 };
 
-} // namespace xuci
+} // namespace xwm

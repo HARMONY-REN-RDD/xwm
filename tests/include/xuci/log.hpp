@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 
-namespace xuci {
+namespace xwm {
 
 // ANSI color codes
 constexpr char INFO_COLOR[] = "\033[36m";    // Cyan
@@ -42,4 +42,4 @@ inline void log_fatal(bool condition, const std::string &message) {
   }
 }
 
-} // namespace xuci
+} // namespace xwm

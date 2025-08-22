@@ -1,12 +1,12 @@
 #pragma once
 
-#include <xuci/types/memory.hpp>
+#include <xwm/types/memory.hpp>
 
 #include <iomanip>
 #include <sstream>
 #include <string>
 
-namespace xuci {
+namespace xwm {
 
 template <std::uint8_t _n_bytes> class Register : public Memory<std::uint8_t> {
 public:
@@ -80,4 +80,4 @@ public:
   }
 };
 
-} // namespace xuci
+} // namespace xwm

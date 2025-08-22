@@ -1,8 +1,8 @@
 #include <iostream>
 
-#include <xuci/core.hpp>
+#include <xwm/core.hpp>
 
-using namespace xuci;
+using namespace xwm;
 
 int main(int argc, char **argv) {
   log_fatal(argc < 2, "Provide a flag");

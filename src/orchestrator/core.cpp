@@ -1,8 +1,8 @@
-#include <xuci/orchestrator.hpp>
+#include <xwm/orchestrator.hpp>
 
-xuci::Orchestrator::Orchestrator(Args &args) : args(args) {}
+xwm::Orchestrator::Orchestrator(Args &args) : args(args) {}
 
-xuci::Orchestrator::~Orchestrator() {
+xwm::Orchestrator::~Orchestrator() {
   if (this->architecture) {
     delete this->architecture;
   }

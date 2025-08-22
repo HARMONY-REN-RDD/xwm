@@ -1,4 +1,4 @@
-PROJECT_NAME := xuci
+PROJECT_NAME := xwm
 SRC_DIR := src
 INCLUDE_DIR := include
 BUILD_DIR := build
@@ -16,6 +16,8 @@ WINDOWS_OBJ := $(patsubst $(SRC_DIR)/%.cpp, $(WINDOWS_BUILD_DIR)/%.o, $(SRC))
 
 -include $(wildcard toolchains/*.mk)
 
+install_linux:
+	cp ./build/linux/xwm /usr/local/bin/xwm
 
 clean:
 	rm -rf $(BUILD_DIR)

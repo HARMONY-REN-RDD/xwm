@@ -1,6 +1,6 @@
 #pragma once
 
-namespace xuci::syk {
+namespace xwm::syk {
 
 class Scope {
 private:
@@ -11,4 +11,4 @@ public:
   ~Scope();
 };
 
-} // namespace xuci::syk
+} // namespace xwm::syk

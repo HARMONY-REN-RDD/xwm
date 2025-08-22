@@ -1,9 +1,9 @@
-#include <xuci/log.hpp>
-#include <xuci/orchestrator.hpp>
+#include <xwm/log.hpp>
+#include <xwm/orchestrator.hpp>
 
 #include <filesystem>
 
-namespace xuci {
+namespace xwm {
 
 using LoadArchitectureFunc = BaseArchitecture *(*)(Orchestrator *);
 
@@ -40,4 +40,4 @@ BaseArchitecture *Orchestrator::load_architecture(std::string path) {
   return func(this);
 }
 
-} // namespace xuci
+} // namespace xwm
