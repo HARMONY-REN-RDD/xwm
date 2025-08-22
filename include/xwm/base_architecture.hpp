@@ -3,10 +3,10 @@
 #include <string>
 #ifdef _WIN32
 #include <windows.h>
-#define xwm_EXPORT extern "C" __declspec(dllexport)
+#define XWM_EXPORT extern "C" __declspec(dllexport)
 #else
 #include <dlfcn.h>
-#define xwm_EXPORT extern "C"
+#define XWM_EXPORT extern "C"
 #endif
 
 #include <vector>

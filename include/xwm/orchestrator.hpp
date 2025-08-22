@@ -5,8 +5,6 @@
 
 #include <xwm/base_architecture.hpp>
 
-
-
 namespace xwm {
 
 using Args = std::vector<std::string>;
