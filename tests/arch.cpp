@@ -1,3 +1,4 @@
+#include "xwm/orchestrator.hpp"
 #include <xwm/base_architecture.hpp>
 
 #include <iostream>
@@ -14,6 +15,8 @@ public:
     }
     stop_execution();
   }
+
+  void run() { std::cout << "run" << std::endl; }
 };
 
-xwm_EXPORT xwm::BaseArchitecture *load_architecture() { return new test(); }
+XWM_EXPORT xwm::BaseArchitecture *load_architecture(xwm::Orchestrator *) { return new test(); }

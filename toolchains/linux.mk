@@ -1,5 +1,5 @@
 CXX_LINUX := g++
-LD_FLAGS_LINUX := -lcrypto -lpthread
+LD_FLAGS_LINUX := -lcrypto -lpthread -lyaml-cpp
 CXX_FLAGS_LINUX := -std=c++17 -Wall -I$(INCLUDE_DIR)
 
 

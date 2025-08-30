@@ -15,9 +15,9 @@ void Orchestrator::process_args() {
 
     this->architecture->set_args(
         std::vector<std::string>(this->args.begin() + 2, this->args.end()));
-    
+
     this->architecture->run();
-    
+
     return;
   }
 
@@ -26,7 +26,14 @@ void Orchestrator::process_args() {
 
     std::string language = this->args.at(1);
 
-        
+    if (language == "syk") {
+      log_fatal(this->args.size() < 3, "Provide at least one file");
+    
+      std::vector<std::string> files(this->args.begin() + 2, this->args.end());
+
+      
+    }
+
     return;
   }
 

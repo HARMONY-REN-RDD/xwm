@@ -1,0 +1,40 @@
+instructions:
+  - mnemonic: nop
+  
+  - mnemonic: setb
+    operands: [ r8, v8 ]
+  
+  - mnemonic: setw
+    operands: [ r16, v16 ]
+  
+  - mnemonic: setl
+    operands: [ r32, v32 ]
+  
+  - mnemonic: cpb
+    operands: [ r8, r8 ]
+  
+  - mnemonic: cpw
+    operands: [ r16, r16 ]
+  
+  - mnemonic: cpl
+    operands: [ r32, r32 ]
+  
+  - mnemonic: storeb
+    operands: [ v32, r8 ]
+  
+  - mnemonic: storew
+    operands: [ v32, r16 ]
+  
+  - mnemonic: storel
+    operands: [ v32, r32 ]
+  
+  - mnemonic: loadb
+    operands: [ r8, v32 ]
+  
+  - mnemonic: loadw
+    operands: [ r16, v32 ]
+  
+  - mnemonic: loadl
+    operands: [ r32, v32 ]
+  
+  
